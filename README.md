@@ -8,7 +8,7 @@ University of Helsinki | Full Stack
     participant browser
     participant server
 
-    browser-->server; POST https://studies.cs.elsinki.fi/exampleapp/newnote;
-    server-->browser; HTML document;
+    browser-->server;POST https://studies.cs.elsinki.fi/exampleapp/newnote;
+    server-->browser;HTML document;
 
 ```
