@@ -5,12 +5,23 @@ University of Helsinki | Full Stack
 
 ```mermaid
     sequenceDiagram
-    participant browser
-    participant server
+    participant Browser
+    participant Server
 
-    browser-->server: POST https://studies.cs.elsinki.fi/exampleapp/newnote;
-    activate server;
-    server-->browser: HTML document;
-    deactivate server;
+    Browser->>+Server: POST https://studies.cs.helsinki.fi/exampleapp/newnote;
+    Server-)-Browser: HTML document;
+    
+    Browser->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/notes;
+    Server-)-Browser:HTML Document;
+
+    Browser->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css;
+    Server-)-Browser: CSS File;
+
+    Browser->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/main.js;
+    Server-)-Browser: Javascript file;
+
+    Browser->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json;
+    Server-)-Browser: json file;
+    
 
 ```
