@@ -5,8 +5,8 @@ University of Helsinki | Full Stack
 
 ```mermaid
     sequenceDiagram
-    participant browser;
-    participant server;
+    participant browser
+    participant server
 
     browser-->server; POST https://studies.cs.elsinki.fi/exampleapp/newnote;
     server-->browser; HTML document;
