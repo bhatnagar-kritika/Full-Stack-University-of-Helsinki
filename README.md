@@ -9,6 +9,8 @@ University of Helsinki | Full Stack
     participant server
 
     browser-->server;POST https://studies.cs.elsinki.fi/exampleapp/newnote;
+    activate server;
     server-->browser;HTML document;
+    deactivate server;
 
 ```
