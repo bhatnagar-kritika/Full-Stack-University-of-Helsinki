@@ -21,7 +21,7 @@ University of Helsinki | Full Stack
     Server-)-Browser: Javascript file;
 
     Browser->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json;
-    Server-)-Browser: json file;
+    Server-)-Browser: {content: "Hello there!", date: "2023-12-15T15:56:11.952Z"};
     
 
 ```
@@ -42,7 +42,7 @@ University of Helsinki | Full Stack
     Server-)-Browser: javascript file;
 
     Browser->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json;
-    Server-)-Browser: json file;
+    Server-)-Browser: json;
 ```
 
 0.6 New note in single page app
@@ -53,5 +53,5 @@ University of Helsinki | Full Stack
     participant Server
 
     Browser->>+Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa;
-    Server-)-Browser: json file;
+    Server-)-Browser: {content: "December is here", date: "2023-12-15T16:00:48.484Z"};
 ```
