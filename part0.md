@@ -45,3 +45,13 @@ University of Helsinki | Full Stack
     Server-)-Browser: json file;
 ```
 
+0.6 New note in single page app
+
+```mermaid
+    sequenceDiagram
+    participant Browser
+    participant Server
+
+    Browser->>+Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa;
+    Server-)-Browser: json file;
+```
